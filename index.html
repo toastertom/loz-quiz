@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<!-- ng-app="lozQuiz" -->
+  <head>
+    <meta charset="utf-8">
+    <title>Legend of Zelda Quiz</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Bootstrap -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+
+    <link rel="stylesheet" href="styles/quizStyles.css"/>
+
+  </head>
+  <body>
+
+    <main>
+      <div class="quiz-container">
+        <h1>Test Your Knowledge: <span>Ocarina Of Time</span></h1>
+        <div class="progress">
+          <div class="answered correct"></div>
+          <div class="on"></div>
+          <div></div>
+        </div>
+        <div class="intro">
+          <h2>Welcome</h2>
+          <p>Click here to begin the challange.</p>
+          <p class="btn">Begin</p>
+        </div>
+        <div class="question ">
+          <p class="text">This is a Question</p>
+          <p class="answers">Answer 1</p>
+          <p class="answers ">Answer 2</p>
+          <p class="answers ">Answer 3</p>
+          <p class="answers">Answer 4</p>
+          <div class="feedback">
+            <p>
+              You are <strong>correct</strong>!
+            </p>
+            <p>
+              Oops! That is not correct...
+            </p>
+            <p>Additional feedback.</p>
+            <div class="btn">Continue</div>
+          </div>
+        </div>
+        <div class="results">
+          <h3>Results</h3>
+          <p>
+            You scored x% by correctly answering X of the total X questions
+          </p>
+          <p>
+            Use the links below to challenge your friends.
+          </p>
+          <div class="share">
+            <a class="btn email" href="#">E-mail</a>
+            <a class="btn twitter" href="#">Tweet</a>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js"></script>
+
+  <script src=""></script>
+  </body>
+</html>

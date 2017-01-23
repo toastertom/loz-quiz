@@ -1,0 +1,251 @@
+/*General layout*/
+body {
+  margin: 0px;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/hyrule.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.quiz-container {
+width: 650px; height: 650px;
+position: relative;
+overflow: hidden;
+background-color: rgba(207, 168, 36, 0.6);
+/*background-image: url("../images/mastersword.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;*/
+color: #fff;
+}
+
+.quiz-container h1{
+  font-size: 2em;
+  text-transform: uppercase;
+  margin: 0px;
+  font-weight: 100;
+  position: absolute;
+  top: 25px;
+  left: 36px;
+}
+
+.quiz-container h1 span{
+  display: block;
+  font-weight: 900px;
+  font-family: sans-serif;
+  font-size: 2em;
+  line-height: 65px;
+}
+
+.quiz-container h2{
+  font-size: 3em;
+  margin: 0px;
+  font-weight: 100;
+}
+
+.quiz-container h3{
+  font-size: 2.4em;
+  margin: 0px;
+  font-weight: 100;
+}
+
+.quiz-container p {
+  margin: 0px 0px 14px 0px;
+}
+
+.quiz-container .btn {
+  display: inline-block;
+  cursor: pointer;
+  background-color: #c04b01;
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 15px;
+  border-radius: 6px;
+}
+
+/*Progress Bar*/
+
+.quiz-container .progress {
+  width: 550px;
+  position: absolute;
+  top: 160px;
+  left: 40px;
+  /*left: 660px;*/
+}
+
+.quiz-container .progress div {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 30px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: background-color 1s;
+}
+
+.quiz-container .progress div::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -80px;
+  left: -10px;
+  width: 50px;
+  height: 80px;
+  background: url("../images/swordsheild.svg") no-repeat 0px 0px;
+  transition: opacity 1s, top 1s;
+  opacity: 0;
+}
+
+.quiz-container .progress div.on,
+.quiz-container .progress div.answered {
+  background-color: #525EAB;
+}
+
+.quiz-container .progress div.correct::after {
+  top: -23px;
+  opacity: 1;
+}
+
+/*Intro*/
+
+.quiz-container .intro{
+  position: absolute;
+  top: 225px;
+  left: 660px;
+  /*left: 40px;*/
+  width: 550px;
+}
+
+.quiz-container .intro p {
+  margin: 0px 0px 40px 0px;
+}
+
+/*Questions*/
+
+.quiz-container .question {
+  width: 550px;
+  position: absolute;
+  top: 225px;
+  left: 660px;
+  /*left: 40px;*/
+}
+
+.quiz-container .question .text {
+  font-size: 1.6em;
+  margin: 0px 0px 20px 0px;
+}
+
+.quiz-container .question .answers {
+  display: inline-block;
+  font-size: 1.1em;
+  width: 225px;
+  border: 2px solid rgba(238, 189, 102, 0.4);
+  border-radius: 6px;
+  padding: 10px;
+  margin: 0px 15px 15px 0px;
+  position: relative;
+}
+
+.quiz-container .answers.selected {
+  border-color: #be4b16;
+}
+
+.quiz-container .answers.correct {
+  border-color: #459a2e;
+}
+
+.quiz-container .question .answers::after {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: no-repeat 0px 0px;
+  background-size: 20px 20px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.quiz-container .answers.selected::after {
+  background-image: url("../images/icon_incorrect.svg");
+}
+
+.quiz-container .answers.correct::after {
+  background-image: url("../images/icon_correct.svg");
+}
+
+.quiz-container .question.unanswered .answers {
+  cursor: pointer;
+}
+
+.quiz-container .question.unanswered .answers:hover {
+  background-color: rgba(238, 189, 102, 0.2);
+}
+
+.quiz-container .question.answered .answers {
+  cursor: default;
+}
+
+/*Feedback*/
+
+.quiz-container .feedback {
+  color: #efbe5e;
+  margin-top: 10px;
+  transition: opacity 1.5s , margin-top 1.5s; visibility: hidden;
+  opacity: 0;
+}
+
+.quiz-container .feedback .btn {
+  margin-top: 5px;
+
+}
+
+.quiz-container .feedback strong{
+  color: #fff;
+
+}
+
+.quiz-container .answered .feedback{
+  visibility: visible;
+  opacity: 1;
+  margin-top: 10px;
+
+}
+
+/*Results*/
+
+.quiz-container .results {
+  position: absolute;
+  top: 225px;
+  left: 660px;
+  /*left: 40px;*/
+  width: 550px;
+}
+
+.quiz-container .results .share {
+  margin-top: 40px;
+}
+
+.quiz-container .results .share a.btn {
+  margin-right: 20px;
+  padding: 9px 15px 8px 42px;
+  background-repeat: no-repeat;
+  background-position: 10px 5px;
+  background-size: 25px 25px;
+}
+
+.quiz-container .results .share a.btn.email {
+  background-color: #f0a121;
+  background-image: url("../images/icon_email.svg");
+}
+
+.quiz-container .results .share a.btn.twitter {
+  background-color: #59adeb;
+  background-image: url("../images/icon_twitter.svg");
+}
