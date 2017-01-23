@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html>
-<!-- ng-app="lozQuiz" -->
+<html ng-app="lozQuiz">
+
   <head>
     <meta charset="utf-8">
     <title>Legend of Zelda Quiz</title>
@@ -15,7 +15,7 @@
   </head>
   <body>
 
-    <main>
+    <main ng-controller="mainCtrl">
       <div class="quiz-container">
         <h1>Test Your Knowledge: <span>Ocarina Of Time</span></h1>
         <div class="progress">
@@ -64,6 +64,9 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js"></script>
 
-  <script src=""></script>
+  <script src="app.js"></script>
+
+  <!-- Controllers -->
+  <script src="controllers/mainCtrl.js"></script>
   </body>
 </html>
