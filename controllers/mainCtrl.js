@@ -48,9 +48,9 @@ angular.module('lozQuiz').controller('mainCtrl', function ($scope, $http, $sce) 
 
     var url = '';
 
-    var emailLink = '<a class="btn email" href="#">E-mail a friend</a>';
+    var emailLink = '<a class="btn email" href="mailto:?subject=Legend Of Zelda Knowledge Test!&amp;body=I scored '+percentage+'% on this Legend Of Zelda Ocarina Of Time quiz. See if you can beat my score! Take the quiz at '+url+' ">E-mail a friend</a>';
 
-    var twitterLink = '<a class="btn twitter" target="_blank" href="#">Tweet your score</a>';
+    var twitterLink = '<a class="btn twitter" target="_blank" href="http://twitter.com/share?text=I scored '+percentage+'% on this Legend Of Zelda Ocarina Of Time quiz. Try to beat my score at&amp;hashtags=lozquiz&amp;url='+url+'">Tweet your score</a>';
 
     var newMarkup = emailLink + twitterLink;
 
