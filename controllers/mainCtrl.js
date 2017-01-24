@@ -46,7 +46,7 @@ angular.module('lozQuiz').controller('mainCtrl', function ($scope, $http, $sce) 
 
   $scope.createShareLinks = function (percentage) {
 
-    var url = '';
+    var url = 'https://toastertom.github.io/loz-quiz/index.html';
 
     var emailLink = '<a class="btn email" href="mailto:?subject=Legend Of Zelda Knowledge Test!&amp;body=I scored '+percentage+'% on this Legend Of Zelda Ocarina Of Time quiz. See if you can beat my score! Take the quiz at '+url+' ">E-mail a friend</a>';
 
