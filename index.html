@@ -17,7 +17,7 @@
 
     <main ng-controller="mainCtrl">
       <div class="quiz-container">
-        <h1>Test Your Knowledge: <span>Ocarina Of Time</span></h1>
+        <h1>Legend Of Zelda Quiz: <span>Ocarina Of Time</span></h1>
         <div class="progress">
           <div class="
             {{ ($index === activeQuestion) ? 'on' : 'off' }}
@@ -31,7 +31,7 @@
           <p>Click here to begin the challange.</p>
           <p class="btn" ng-click="activeQuestion = 0">Begin</p>
         </div>
-        <div class="question answered
+        <div class="question
         {{ $index === activeQuestion ? 'active' : 'inactive' }}
         {{ myQuestion.questionState === 'answered' ? 'answered' : 'unanswered' }}"
         ng-repeat="myQuestion in myQuestions">
