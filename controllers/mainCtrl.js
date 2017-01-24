@@ -28,6 +28,8 @@ angular.module('lozQuiz').controller('mainCtrl', function ($scope, $http, $sce) 
     $scope.myQuestions[qIndex].questionState = 'answered';
 
     };
+
+    $scope.percentage = (($scope.score / $scope.totalQuestions) * 100).toFixed(1);
   };
 
   $scope.isSelected = function (qIndex, aIndex) {
@@ -41,5 +43,19 @@ angular.module('lozQuiz').controller('mainCtrl', function ($scope, $http, $sce) 
   $scope.selectContinue = function () {
     return $scope.activeQuestion += 1;
   }
+
+  $scope.createShareLinks = function (percentage) {
+
+    var url = '';
+
+    var emailLink = '<a class="btn email" href="#">E-mail a friend</a>';
+
+    var twitterLink = '<a class="btn twitter" target="_blank" href="#">Tweet your score</a>';
+
+    var newMarkup = emailLink + twitterLink;
+
+    return $sce.trustAsHtml(newMarkup);
+  }
+
 
 });
