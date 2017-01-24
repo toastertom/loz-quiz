@@ -1,7 +1,7 @@
 [
   {
     "question": "What is the name of the Kokiri blocking your path to the Great Deku Tree?",
-    "answer" :[
+    "answers" :[
       {"id" : 0, "text": "Fado"},
       {"id" : 1, "text": "Saria"},
       {"id" : 2, "text": "Mido"},
@@ -11,7 +11,7 @@
   },
   {
     "question": "What is the name of the Kokiri blocking your path to the Great Deku Tree?",
-    "answer" :[
+    "answers" :[
       {"id" : 0, "text": "Fado"},
       {"id" : 1, "text": "Saria"},
       {"id" : 2, "text": "Mido"},
@@ -21,7 +21,7 @@
   },
   {
     "question": "What is the name of the Kokiri blocking your path to the Great Deku Tree?",
-    "answer" :[
+    "answers" :[
       {"id" : 0, "text": "Fado"},
       {"id" : 1, "text": "Saria"},
       {"id" : 2, "text": "Mido"},
@@ -31,7 +31,7 @@
   },
   {
     "question": "What is the name of the Kokiri blocking your path to the Great Deku Tree?",
-    "answer" :[
+    "answers" :[
       {"id" : 0, "text": "Fado"},
       {"id" : 1, "text": "Saria"},
       {"id" : 2, "text": "Mido"},
