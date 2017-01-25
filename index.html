@@ -41,7 +41,7 @@
             image : answer.image,
             selected : isSelected($parent.$index, $index),
             correct: isCorrect($parent.$index, $index) }"
-          ng-style="{ 'background-image': 'url({{ answer.image }})' }"
+          ng-style="{ 'background-image': 'url({{ answer.image}})'}"
           ng-click="selectAnswer($parent.$index, $index)"
           ng-repeat="answer in myQuestions[$index].answers">
             {{answer.text}}
