@@ -11,7 +11,7 @@
     "feedback" : "That little prick. Blaming me for killing the Great Deku Tree."
   },
   {
-    "question": "How many sages exist in Ocarina Of Time?",
+    "question": "How many temple sages are in Ocarina Of Time?",
     "answers" :[
       {"id" : 0, "text": "6"},
       {"id" : 1, "text": "7"},
@@ -42,14 +42,23 @@
     "feedback" : "That little guy, he just wont stop rollin."
   },
   {
-    "question": "What is the name Darunia's son?",
+    "question": "What dungeon do you recieve the silver gauntlets?",
     "answers" :[
-      {"id" : 0, "text": "Darun"},
-      {"id" : 1, "text": "Darmani"},
-      {"id" : 2, "text": "Buttface"},
-      {"id" : 3, "text": "Link"}
+      {"id" : 0, "image": "images/st.png"},
+      {"id" : 1, "image": "images/ft.png"},
+      {"id" : 2, "image": "images/firetemple.png"},
+      {"id" : 3, "image": "images/wt.png"}
     ],
-    "correct" : 3,
-    "feedback" : "Technically his name is whatever you name your character, but officially it would be..."
+    "correct" : 0
+  },
+  {
+    "question": "What is at the bottom of the pool in the Lakeside Laboratory?",
+    "answers" :[
+      {"id" : 0, "text": "Heart Piece"},
+      {"id" : 1, "text": "Shark"},
+      {"id" : 2, "text": "Nothing"},
+      {"id" : 3, "text": "Small Fish"}
+    ],
+    "correct" : 1
   }
 ]
