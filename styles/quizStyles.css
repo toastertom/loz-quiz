@@ -283,6 +283,7 @@ color: #fff;
   .quiz-container {
     width: 320px;
     background-size: 320px auto;
+    height: 700px;
   }
 
   .quiz-container h1 {
