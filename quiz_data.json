@@ -60,5 +60,15 @@
       {"id" : 3, "text": "Small Fish"}
     ],
     "correct" : 1
+  },
+  {
+    "question": "Which one is Ganondorf's true from?",
+    "answers" :[
+      {"id" : 0, "image": "images/f.png"},
+      {"id" : 1, "image": "images/ga.png"},
+      {"id" : 2, "image": "images/g.png"},
+      {"id" : 3, "image": "images/i.png"}
+    ],
+    "correct" : 2
   }
 ]
