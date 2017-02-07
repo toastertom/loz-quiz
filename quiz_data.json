@@ -11,14 +11,15 @@
     "feedback" : "That little prick. Blaming me for killing the Great Deku Tree."
   },
   {
-    "question": "How many temple sages are in Ocarina Of Time?",
+    "question": "How many sages are in Ocarina Of Time?",
     "answers" :[
       {"id" : 0, "text": "6"},
       {"id" : 1, "text": "7"},
       {"id" : 2, "text": "3"},
       {"id" : 3, "text": "5"}
     ],
-    "correct" : 0
+    "correct" : 1,
+    "feedback" : "Did you count Princess Zelda?"
   },
   {
     "question": "What place is known as Kakariko Village?",
